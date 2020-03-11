@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Title 1",
+    "icon": "/img/img1-icon.png",
+    "image": "/img/img1-image.png",
+    "body": "text 1",
+    "url": "https://via.placeholder.com/600/92c952"
+  },
+  {
+    "title": "Title 2",
+    "icon": "/img/img2-icon.png",
+    "image": "/img/img2-image.png",
+    "body": "text 2",
+    "url": "https://via.placeholder.com/600/771796"
+  },
+  {
+    "title": "Title 3",
+    "icon": "/img/img3-icon.png",
+    "image": "/img/img3-image.png",
+    "body": "text 3",
+    "url": "https://via.placeholder.com/600/24f355"
+  },
+  {
+    "title": "Title 4",
+    "icon": "/img/img4-icon.png",
+    "image": "/img/img4-image.png",
+    "body": "text 4",
+    "url": "https://via.placeholder.com/600/d32776"
+  },
+  {
+    "title": "Title 5",
+    "icon": "/img/img5-icon.png",
+    "image": "/img/img5-image.png",
+    "body": "text 5",
+    "url": "https://via.placeholder.com/600/f66b97"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "dbConnection": {
+    "user":       "DB_USER",
+    "password":   "DB_PASSWORD",
+    "port":     {
+      "__name":   "DB_PORT",
+      "__format": "json"
+    },
+    "host":       "DB_HOST",
+    "database":   "DB_NAME"
+  }
+}
