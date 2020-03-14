@@ -1,12 +1,26 @@
 {
+  "port": {
+    "__name":         "PORT",
+    "__format":       "json"
+  },
+  "interval": {
+    "__name":         "INTERVAL",
+    "__format":       "json"
+  },
+  "email":            "EMAIL",
+  "corsOrigin":       "CORS_ORIGIN",
+
+  "publicVapidKey":   "PUBLIC_VAPID_KEY",
+  "privateVapidKey":  "PRIVATE_VAPID_KEY",
+
   "dbConnection": {
-    "user":       "DB_USER",
-    "password":   "DB_PASSWORD",
+    "user":           "DB_USER",
+    "password":       "DB_PASSWORD",
     "port":     {
-      "__name":   "DB_PORT",
-      "__format": "json"
+      "__name":       "DB_PORT",
+      "__format":     "json"
     },
-    "host":       "DB_HOST",
-    "database":   "DB_NAME"
+    "host":           "DB_HOST",
+    "database":       "DB_NAME"
   }
 }

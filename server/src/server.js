@@ -1,14 +1,18 @@
-const express       = require('express');
-const webpush       = require('web-push');
-const cors          = require('cors');
-const path          = require('path');
-const apiRouter     = require('src/api');
-const cron          = require('src/cron');
+const express           = require('express');
+const webpush           = require('web-push');
+const cors              = require('cors');
+const path              = require('path');
 
-const PORT = 4000;
-const INTERVAL = 1; // in minutes
-const EMAIL = 'nazar.vynn@gmail.com';
-const CORS_ORIGIN = 'http://localhost:8080';
+const config            = require('config');
+const PORT              = config.get('port');
+const INTERVAL          = config.get('interval'); // in minutes
+const EMAIL             = config.get('email');
+const CORS_ORIGIN       = config.get('corsOrigin');
+const PUBLIC_VAPID_KEY  = config.get('publicVapidKey');
+const PRIVATE_VAPID_KEY = config.get('privateVapidKey');
+
+const apiRouter         = require('src/api');
+const cron              = require('src/cron');
 
 class Server {
     constructor() {
@@ -24,9 +28,7 @@ class Server {
         }));
         apiRouter.init(this._app);
 
-        const publicVapidKey = process.env.PUBLIC_VAPID_KEY;
-        const privateVapidKey = process.env.PRIVATE_VAPID_KEY;
-        webpush.setVapidDetails(`mailto:${EMAIL}`, publicVapidKey, privateVapidKey);
+        webpush.setVapidDetails(`mailto:${EMAIL}`, PUBLIC_VAPID_KEY, PRIVATE_VAPID_KEY);
 
         cron.start(INTERVAL);
     }
