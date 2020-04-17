@@ -1,17 +1,28 @@
-# express server
-`$ npm start`
+# Push Notifications
 
-`$ ./node_modules/.bin/web-push generate-vapid-keys`
+## Clone application
+`$ git clone https://github.com/nazarvynn/PushNotifications_v2.git`
 
-`$ env PUBLIC_VAPID_KEY='BLzUn38rcyNg1V0joN3I-kKmB4JWJWwUxn6WtiFRHWiA_O8O42Elo_KnT0lhn-yQE-MNz5NCeKMVS_bgMYvxGRo' env PRIVATE_VAPID_KEY='MTYlwjbwjL4GKKdLoVDPgfbcNjBLXbae_PhpjZR3Z0w' node .`
-
-`$ knex migrate:latest`
-
+## Install
+### NodeJS >= 10.13.0
+### NPM >= 6.4.1
+### Postgres >= 7.8
+### Knex
 `$ sudo npm install -g knex`
+### Dependencies
+```
+$ cd PushNotifications_v2/server
+$ npm i
+```
 
-https://itnext.io/an-introduction-to-web-push-notifications-a701783917ce
-https://medium.com/izettle-engineering/beginners-guide-to-web-push-notifications-using-service-workers-cb3474a17679
-https://thecodebarbarian.com/sending-web-push-notifications-from-node-js.html
-https://github.com/nazarvynn/PushNotifications
+## DB Migrate
+```
+$ cd PushNotifications_v2/server
+$ knex migrate:latest
+```
 
-https://github.com/OptimalBits/bull
+## Start server
+```
+$ cd PushNotifications_v2/server
+$ npm start
+```
