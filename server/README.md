@@ -15,6 +15,8 @@ $ cd PushNotifications_v2/server
 $ npm i
 ```
 
+## Start Postgres
+
 ## DB Migrate
 ```
 $ cd PushNotifications_v2/server
