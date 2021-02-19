@@ -1,6 +1,6 @@
 {
   "user":             "postgres",
-  "password":         "",
+  "password":         "postgres",
   "publicVapidKey":   "BLzUn38rcyNg1V0joN3I-kKmB4JWJWwUxn6WtiFRHWiA_O8O42Elo_KnT0lhn-yQE-MNz5NCeKMVS_bgMYvxGRo",
   "privateVapidKey":  "MTYlwjbwjL4GKKdLoVDPgfbcNjBLXbae_PhpjZR3Z0w"
 }
